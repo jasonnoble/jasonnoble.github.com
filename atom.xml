@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Jason's Adventures on the Rails]]></title>
+  <link href="http://jasonnoble.github.io/atom.xml" rel="self"/>
+  <link href="http://jasonnoble.github.io/"/>
+  <updated>2013-07-20T15:31:59-06:00</updated>
+  <id>http://jasonnoble.github.io/</id>
+  <author>
+    <name><![CDATA[Jason Noble]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My First blog post]]></title>
+    <link href="http://jasonnoble.github.io/blog/2013/07/15/my-first-blog-post/"/>
+    <updated>2013-07-15T21:09:00-06:00</updated>
+    <id>http://jasonnoble.github.io/blog/2013/07/15/my-first-blog-post</id>
+    <content type="html"><![CDATA[<p>This is so exciting, I&rsquo;m typing a blog entry!!!</p>
+
+<p>This is line two!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pwd
+</span><span class='line'>/Users/jasonn/workspace/building_the_toolbelt
+</span><span class='line'>$</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Cat class</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Cat</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">speak</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;Meow&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<div><script src='https://gist.github.com/a2bb11d2096e120ca7c0.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>
