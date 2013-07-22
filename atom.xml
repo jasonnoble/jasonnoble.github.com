@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Jason's Adventures on the Rails]]></title>
+  <title><![CDATA[My Github blog]]></title>
   <link href="http://jasonnoble.github.io/atom.xml" rel="self"/>
   <link href="http://jasonnoble.github.io/"/>
-  <updated>2013-07-20T15:31:59-06:00</updated>
+  <updated>2013-06-02T22:37:39-06:00</updated>
   <id>http://jasonnoble.github.io/</id>
   <author>
     <name><![CDATA[Jason Noble]]></name>
@@ -14,20 +14,14 @@
 
   
   <entry>
-    <title type="html"><![CDATA[My First blog post]]></title>
-    <link href="http://jasonnoble.github.io/blog/2013/07/15/my-first-blog-post/"/>
-    <updated>2013-07-15T21:09:00-06:00</updated>
-    <id>http://jasonnoble.github.io/blog/2013/07/15/my-first-blog-post</id>
-    <content type="html"><![CDATA[<p>This is so exciting, I&rsquo;m typing a blog entry!!!</p>
-
-<p>This is line two!</p>
+    <title type="html"><![CDATA[My first Github blog post]]></title>
+    <link href="http://jasonnoble.github.io/blog/2013/06/02/my-first-github-blog-post/"/>
+    <updated>2013-06-02T21:53:00-06:00</updated>
+    <id>http://jasonnoble.github.io/blog/2013/06/02/my-first-github-blog-post</id>
+    <content type="html"><![CDATA[<p>This is the first post I&rsquo;ve done via Octopress.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ pwd
-</span><span class='line'>/Users/jasonn/workspace/building_the_toolbelt
-</span><span class='line'>$</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make_me_a_sandwich</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -47,10 +41,52 @@
 
 
 
-<div><script src='https://gist.github.com/a2bb11d2096e120ca7c0.js'></script>
+<div><script src='https://gist.github.com/996818.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 
 
+
+
+<figure class='code'><figcaption><span>Role class (role.rb)</span> <a href='http://jasonnoble.github.io/downloads/code/role.rb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">class</span> <span class="nc">Role</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:user_roles</span>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:through</span> <span class="o">=&gt;</span> <span class="ss">:user_roles</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">seed_data!</span>
+</span><span class='line'>      <span class="no">Role</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
+</span><span class='line'>          <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;Admin&quot;</span>
+</span><span class='line'>          <span class="p">)</span><span class="o">.</span><span class="n">first_or_create</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="no">Role</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
+</span><span class='line'>          <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;Contributor&quot;</span>
+</span><span class='line'>      <span class="p">)</span><span class="o">.</span><span class="n">first_or_create</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="no">Role</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
+</span><span class='line'>          <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;Contestant&quot;</span>
+</span><span class='line'>      <span class="p">)</span><span class="o">.</span><span class="n">first_or_create</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
